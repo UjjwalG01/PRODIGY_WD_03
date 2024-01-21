@@ -8,13 +8,13 @@ import client3 from "../assets/client3.png"
 
 const Clients = () => {
     return (
-        <section>
+        <section id='clients'>
             <div className="container">
-                <h1 className='fw-semi-bold fs-600 mt-4 text-center'>Worked for</h1>
+                <h1 className='fw-semi-bold fs-medium mt-4 text-center'>Clients Worked For</h1>
                 <div className="centered-content">
                     <div className="three-columns | centered-column">
                         <div className="client-card">
-                            <p className='fs-500 fw-semi-bold'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt esse corporis asperiores?</p>
+                            <p className='fs-500 fw-semi-bold'>This is a sample review, generated to occupy some of the spaces of the card. This is not an actual review and have not worked for this clients.</p>
                             <div className="client-info">
                                 <img src={client1} alt="" />
                                 <div className="client-text">
@@ -30,7 +30,7 @@ const Clients = () => {
                             </div>
                         </div>
                         <div className="client-card">
-                            <p className='fs-500 fw-semi-bold'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt esse corporis asperiores?</p>
+                            <p className='fs-500 fw-semi-bold'>This is a sample review, generated to occupy some of the spaces of the card. This is not an actual review and have not worked for this clients.</p>
                             <div className="client-info">
                                 <img src={client2} alt="" />
                                 <div className="client-text">
@@ -40,13 +40,13 @@ const Clients = () => {
                                         <MdStarRate />
                                         <MdStarRate />
                                     </span>
-                                    <h3 className='fs-small fw-semi-bold'>Gemma Nolen</h3>
-                                    <p className='fs-x-small'>Google</p>
+                                    <h3 className='fs-small fw-semi-bold'>Vikram Saud</h3>
+                                    <p className='fs-x-small'>IBM</p>
                                 </div>
                             </div>
                         </div>
                         <div className="client-card">
-                            <p className='fs-500 fw-semi-bold'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt esse corporis asperiores?</p>
+                            <p className='fs-500 fw-semi-bold'>This is a sample review, generated to occupy some of the spaces of the card. This is not an actual review and have not worked for this clients.</p>
                             <div className="client-info">
                                 <img src={client3} alt="" />
                                 <div className="client-text">
@@ -56,8 +56,8 @@ const Clients = () => {
                                         <MdStarRate />
                                         <MdStarRate />
                                     </span>
-                                    <h3 className='fs-small fw-semi-bold'>Gemma Nolen</h3>
-                                    <p className='fs-x-small'>Google</p>
+                                    <h3 className='fs-small fw-semi-bold'>John Doe</h3>
+                                    <p className='fs-x-small'>Microsoft</p>
                                 </div>
                             </div>
                         </div>

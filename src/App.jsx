@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
 import LatestWork from "./pages/LatestWork";
