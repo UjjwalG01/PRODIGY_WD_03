@@ -31,7 +31,7 @@ const LatestWork = () => {
                             <li>CSS/SCSS</li>
                         </ul>
                         <div className="btn-link">
-                            <a className='no-underline' target='_blank' href="#"><button className='button flex'>Code <FaCodeBranch /></button></a>
+                            <a className='no-underline' target='_blank' href="https://github.com/UjjwalG01/v-fashion-ecommerce.git"><button className='button flex'>Code <FaCodeBranch /></button></a>
                             <a className='no-underline' target='_blank' href="https://vfashion-ecommerce.vercel.app/"><button className='button flex'>Go Live <FaLocationArrow /></button></a>
                         </div>
                     </div>
@@ -48,8 +48,8 @@ const LatestWork = () => {
                             <li>CSS/SCSS</li>
                         </ul>
                         <div className="btn-link">
-                            <a className='no-underline' target='_blank' href="#"><button className='button flex'>Code <FaCodeBranch /></button></a>
-                            <a className='no-underline' target='_blank' type='disabled' href="#"><button className='button flex'>Go Live <FaLocationArrow /></button></a>
+                            <a className='no-underline' target='_blank' href="https://github.com/UjjwalG01/Bookstore-frontend.git"><button className='button flex'>Code <FaCodeBranch /></button></a>
+                            <a className='no-underline' target='_blank' href="https://github.com/UjjwalG01/Bookstore-frontend.git"><button className='button flex'>Go Live <FaLocationArrow /></button></a>
                         </div>
                     </div>
                     {openWorks && (

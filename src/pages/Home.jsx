@@ -12,7 +12,7 @@ const Home = () => {
                         <p className='fs-secondary-sm'>Hello I'm </p>
                         <h1 className='fs-primary fw-bold'>UJJWAL GIRI</h1>
                         <p className="fw-bold fs-medium">A WEB DEVELOPER</p>
-                        <a target='_blank' className='no-underline' href="https://drive.google.com/file/d/1FCvTfWjf5ZCGsrTAUzihQQ0cS3z6MqNP/view?usp=sharing"><button className="button mt-3 | cv-btn">VIEW MY CV <SiReaddotcv /></button></a>
+                        <a target='_blank' className='no-underline' href="https://drive.google.com/file/d/1KE48BGYQLDNlFl-CNlMJnUvzQS5DW24t/view?usp=sharing"><button className="button mt-3 | cv-btn">VIEW MY CV <SiReaddotcv /></button></a>
                     </div>
                     <div className="image-section">
                         <div className="image-clip">

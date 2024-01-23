@@ -40,7 +40,7 @@ const Clients = () => {
                                         <MdStarRate />
                                         <MdStarRate />
                                     </span>
-                                    <h3 className='fs-small fw-semi-bold'>Vikram Saud</h3>
+                                    <h3 className='fs-small fw-semi-bold'>Chris Dale</h3>
                                     <p className='fs-x-small'>IBM</p>
                                 </div>
                             </div>
