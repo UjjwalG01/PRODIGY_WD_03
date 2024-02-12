@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { MdClose } from "react-icons/md";
 import Navlink from './NavLink';
 import { BiMenuAltRight } from 'react-icons/bi';
+import { motion, useSpring, useMotionValue } from "framer-motion"
 
 // Images imported
 import logo from "../assets/logo3.png";
@@ -25,12 +26,17 @@ const Header = () => {
                         <span className="visually-hidden">Menu</span>
                     </button>
                     <nav className={`primary-navigation ${clicked === true ? "show" : ""}`} id="primary-navigation">
-                        <ul role="list" className="nav-list">
-                            <Navlink onClick={() => setClicked(false)} href={"#home"} label={"Home"} />
-                            <Navlink onClick={() => setClicked(false)} href={"#skills"} label={"Skills"} />
-                            <Navlink onClick={() => setClicked(false)} href={"#portfolio"} label={"Portfolio"} />
-                            <Navlink onClick={() => setClicked(false)} href={"#contact"} label={"Contact"} />
-                        </ul>
+                        <motion.ul
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: clicked ? 1 : 0, height: clicked ? "auto" : 1 }}
+                            exit={{ opacity: 0, height: 0, transition: { duration: 0.3, ease: "easeInOut" } }}
+                            role="list"
+                            className="nav-list">
+                            <Navlink onClick={() => setClicked(false)} href={"home"} label={"Home"} />
+                            <Navlink onClick={() => setClicked(false)} href={"skills"} label={"Skills"} />
+                            <Navlink onClick={() => setClicked(false)} href={"portfolio"} label={"Portfolio"} />
+                            <Navlink onClick={() => setClicked(false)} href={"contact"} label={"Contact"} />
+                        </motion.ul>
                     </nav>
                 </div>
             </div>

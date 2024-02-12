@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { FaArrowRight, FaCodeBranch, FaLocationArrow } from 'react-icons/fa'
+import { FaArrowRight } from 'react-icons/fa'
 
 // images import
 import work1 from "../assets/vfashion.jpg"
 import work2 from "../assets/sample2.jpg"
+import { WorkCard } from '../components/sections/WorkCard'
 
 const LatestWork = () => {
     const [openWorks, setOpenWorks] = useState(false);
@@ -16,80 +17,44 @@ const LatestWork = () => {
         <section className='work-section' id='portfolio'>
             <div className="container">
                 <h1 className='fw-semi-bold fs-medium mt-4 text-center'>My Latest Work</h1>
-                <div className="two-columns | work-portfolio">
-                    <div className="work-card">
-                        <img src={work1} alt="" />
-                        <h2 className='fs-small mt-2 fw-bold'>A Frontend Fashion Shopping Site</h2>
-                        <p className='fs-x-small fw-regular'>Frontend of an fashion ecommerce web application, developed from
-                            the Figma file provided by <a href="https://www.freefigmatemplates.com/#home-links">Fee Figma
-                                Templates</a>. The site displays the modern fashion desgins for the trendy clothes and fashion items.
-                            The app is optimized and has efficient user experience, worked for browser adaptability and fully responsive
-                            for most of the available devices.</p>
-                        <ul role='list' className='tech-stack'>
-                            <li>React</li>
-                            <li>Node/Express</li>
-                            <li>CSS/SCSS</li>
-                        </ul>
-                        <div className="btn-link">
-                            <a className='no-underline' target='_blank' href="https://github.com/UjjwalG01/v-fashion-ecommerce.git"><button className='button flex'>Code <FaCodeBranch /></button></a>
-                            <a className='no-underline' target='_blank' href="https://vfashion-ecommerce.vercel.app/"><button className='button flex'>Go Live <FaLocationArrow /></button></a>
-                        </div>
-                    </div>
-                    <div className="work-card">
-                        <img src={work2} alt="" />
-                        <h2 className='fs-small mt-2 fw-bold'>A Fullstack Room Booking App (GRIHA)</h2>
-                        <p className='fs-x-small fw-regular'>Node with Express as a backend and React as a frontend, the project developed
-                            as 6th sem college project, this web app is full stack project where person can host their rooms mentioning all the
-                            services and details which are available to the guests, and they can book as per their requirements. The app is fully
-                            functional where most of the functions of room booking system has been implemented.</p>
-                        <ul role='list' className='tech-stack'>
-                            <li>React</li>
-                            <li>Node/Express</li>
-                            <li>CSS/SCSS</li>
-                        </ul>
-                        <div className="btn-link">
-                            <a className='no-underline' target='_blank' href="https://github.com/UjjwalG01/Bookstore-frontend.git"><button className='button flex'>Code <FaCodeBranch /></button></a>
-                            <a className='no-underline' target='_blank' href="https://github.com/UjjwalG01/Bookstore-frontend.git"><button className='button flex'>Go Live <FaLocationArrow /></button></a>
-                        </div>
-                    </div>
+                <div
+                    className="two-columns | work-portfolio">
+                    <WorkCard
+                        title={"A Frontend Fashion Shopping Site"}
+                        description={`Frontend of an fashion ecommerce web application, developed from the Figma file provided by ${<a target='_blank' href='https://www.freefigmatemplates.com/#home-links'>Fee Figma Templates</a>}. The site displays the modern fashion desgins for the trendy clothes and fashion items. The app is optimized and has efficient user experience, worked for browser adaptability and fully responsive for most of the available devices.`}
+                        img={work1}
+                        techs={["React", "Figma", "CSS/SCSS"]}
+                        github={"https://github.com/UjjwalG01/v-fashion-ecommerce.git"}
+                        live={"https://vfashion-ecommerce.vercel.app/"}
+                    />
+                    <WorkCard
+                        title={"A Fullstack Room Booking App (GRIHA)"}
+                        description={"Node with Express as a backend and React as a frontend, the project developed as 6th sem college project, this web app is full stack project where person can host their rooms mentioning all the services and details which are available to the guests, and they can book as per their requirements. The app is fully functional where most of the functions of room booking system has been implemented."}
+                        img={work2}
+                        techs={["React", "Node", "CSS/SCSS"]}
+                        github={"https://github.com/UjjwalG01/Bookstore-frontend.git"}
+                        live={"https://github.com/UjjwalG01/Bookstore-frontend.git"}
+                    />
                     {openWorks && (
-                        <div className="work-card">
-                            <img src={work2} alt="" />
-                            <h2 className='fs-small mt-2 fw-bold'>A Fullstack Room Booking App (GRIHA)</h2>
-                            <p className='fs-x-small fw-regular'>Node with Express as a backend and React as a frontend, the project developed
-                                as 6th sem college project, this web app is full stack project where person can host their rooms mentioning all the
-                                services and details which are available to the guests, and they can book as per their requirements. The app is fully
-                                functional where most of the functions of room booking system has been implemented.</p>
-                            <ul role='list' className='tech-stack'>
-                                <li>React</li>
-                                <li>Node/Express</li>
-                                <li>CSS/SCSS</li>
-                            </ul>
-                            <div className="btn-link">
-                                <a className='no-underline' target='_blank' href="#"><button className='button flex'>Code <FaCodeBranch /></button></a>
-                                <a className='no-underline' target='_blank' href="#"><button className='button flex'>Go Live <FaLocationArrow /></button></a>
-                            </div>
-                        </div>
+                        <WorkCard
+                            title={"A Fullstack Room Booking App (GRIHA)"}
+                            description={"Node with Express as a backend and React as a frontend, the project developed as 6th sem college project, this web app is full stack project where person can host their rooms mentioning all the services and details which are available to the guests, and they can book as per their requirements. The app is fully functional where most of the functions of room booking system has been implemented."}
+                            img={work2}
+                            techs={["React", "Node", "CSS/SCSS"]}
+                            github={"https://github.com/UjjwalG01/Bookstore-frontend.git"}
+                            live={"https://github.com/UjjwalG01/Bookstore-frontend.git"}
+                        />
                     )}
 
                     {openWorks && (
-                        <div className="work-card">
-                            <img src={work2} alt="" />
-                            <h2 className='fs-small mt-2 fw-bold'>A Fullstack Room Booking App (GRIHA)</h2>
-                            <p className='fs-x-small fw-regular'>Node with Express as a backend and React as a frontend, the project developed
-                                as 6th sem college project, this web app is full stack project where person can host their rooms mentioning all the
-                                services and details which are available to the guests, and they can book as per their requirements. The app is fully
-                                functional where most of the functions of room booking system has been implemented.</p>
-                            <ul role='list' className='tech-stack'>
-                                <li>React</li>
-                                <li>Node/Express</li>
-                                <li>CSS/SCSS</li>
-                            </ul>
-                            <div className="btn-link">
-                                <a className='no-underline' target='_blank' href="#"><button className='button flex'>Code <FaCodeBranch /></button></a>
-                                <a className='no-underline' target='_blank' href="#"><button className='button flex'>Go Live <FaLocationArrow /></button></a>
-                            </div>
-                        </div>
+                        <WorkCard
+                            title={"A Fullstack Room Booking App (GRIHA)"}
+                            description={"Node with Express as a backend and React as a frontend, the project developed as 6th sem college project, this web app is full stack project where person can host their rooms mentioning all the services and details which are available to the guests, and they can book as per their requirements. The app is fully functional where most of the functions of room booking system has been implemented."}
+                            img={work2}
+                            techs={["React", "Node", "CSS/SCSS"]}
+                            github={"https://github.com/UjjwalG01/Bookstore-frontend.git"}
+                            live={"https://github.com/UjjwalG01/Bookstore-frontend.git"}
+                        />
                     )}
                 </div>
                 <div className="show-more">

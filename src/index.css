@@ -315,10 +315,11 @@ header {
     font-weight: var(--fw-semi-bold);
     text-transform: uppercase;
 
-    & a {
+    & .link {
       color: var(--clr-dark-900);
       font-weight: var(--fw-semi-bold);
       transition: all 0.4s ease !important;
+      cursor: pointer;
       &:hover {
         color: #525252;
         border-bottom: 2px solid #bbb;
@@ -339,6 +340,7 @@ header {
       flex-direction: column;
       align-items: center;
       transition: height 0.4s ease !important;
+      overflow: hidden;
     }
   }
 }
