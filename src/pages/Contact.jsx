@@ -14,7 +14,7 @@ const Contact = () => {
                         <div className="social-links">
                             <span><a target='_blank' className='dark' href="https://github.com/UjjwalG01"><FaGithub /></a></span>
                             <span><a target='_blank' className='dark' href="https://www.instagram.com/__ujjwal_giri?igsh=MW1ybDc0NmV4a3M4Mw=="><FaInstagram /></a></span>
-                            <span><a target='_blank' className='dark' href="linkedin.com/in/its-ujjwal-giri"><FaLinkedin /></a></span>
+                            <span><a target='_blank' className='dark' href="https://linkedin.com/in/its-ujjwal-giri"><FaLinkedin /></a></span>
                             <span><a target='_blank' className='dark' href="https://discord.com/channels/1059151739149897808/1059151739149897811"><FaDiscord /></a></span>
                         </div>
                     </div>
