@@ -316,9 +316,11 @@ header {
     text-transform: uppercase;
 
     & .link {
+    & .link {
       color: var(--clr-dark-900);
       font-weight: var(--fw-semi-bold);
       transition: all 0.4s ease !important;
+      cursor: pointer;
       cursor: pointer;
       &:hover {
         color: #525252;
