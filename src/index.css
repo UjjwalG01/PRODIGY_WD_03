@@ -320,6 +320,7 @@ header {
       font-weight: var(--fw-semi-bold);
       transition: all 0.4s ease !important;
       cursor: pointer;
+      cursor: pointer;
       &:hover {
         color: #525252;
         border-bottom: 2px solid #bbb;
