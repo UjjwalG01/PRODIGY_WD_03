@@ -521,7 +521,7 @@ header {
   gap: clamp(0.2em, 0.5em, 0.7em);
   text-align: center;
   padding: var(--size-30) clamp(0.6em, 1vw + 1.5em, 2.5em);
-  box-shadow: 5px 5px 10px #adacac;
+  box-shadow: 5px 5px 10px 2px #adacac;
 
   @media (max-width: 50em) {
     p {
